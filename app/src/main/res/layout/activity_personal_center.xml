@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tv_personal_center1"
+        android:text="个人中心"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/colorBlueLight"/>
+
+
+    <TextView
+        android:id="@+id/tv_student_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_personal_center1"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/btn_user_info"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_student_number"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="5dp"
+        android:text="个人信息"
+        android:background="@drawable/button"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_my_goods"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:text="我的发布"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn_user_info"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_my_collection"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:text="我的收藏"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn_my_goods"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btn_modify_password"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:text="修改密码"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn_my_collection"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:text="退出登录"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn_modify_password"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:shadowRadius="3" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/btn_logout"
+        android:background="@drawable/button"
+        android:text="返回"
+        android:textSize="20sp" />
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorCyan"
+        android:gravity="center_horizontal"
+        android:text="校园二手交易 "
+        android:textColor="@color/colorBlack"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+    <ListView
+        android:id="@+id/lv_all_commodity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view2"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="60dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorBlack"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:id="@+id/ib_home_page"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv_home_page"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorCyan"
+        android:src="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/ib_add_product"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv_add_product"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/colorCyan"
+        android:src="@drawable/ic_add_commodity" />
+
+    <ImageButton
+        android:id="@+id/ib_personal"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv_home_page"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorCyan"
+        android:src="@drawable/ic_personal" />
+
+    <TextView
+        android:id="@+id/tv_home_page"
+        android:layout_width="35dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="首页"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_add_product"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="170dp"
+        android:layout_marginBottom="5dp"
+        android:text="发布闲置"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_personal"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="9dp"
+        android:text="个人中心"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorBlack"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
